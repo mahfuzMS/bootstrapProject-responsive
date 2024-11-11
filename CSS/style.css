@@ -89,6 +89,10 @@ body {
   margin: 1.5rem;
 }
 
+.card{
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.7);
+}
+
 .card img {
   height: 17rem;
   width: 100%;
@@ -98,8 +102,13 @@ body {
   line-height: 1.9;
 }
 
+.card-title{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 #content,
-#about {
+#about { 
   margin: 1.5rem;
 }
 
