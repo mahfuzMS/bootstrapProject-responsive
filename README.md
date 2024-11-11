@@ -1,5 +1,4 @@
-
-Now I discuss my project.
+Description of my project. 
 
 Language: 
   1. HTML
@@ -15,6 +14,9 @@ This project has six sections.
   4. About section
   5. Contact form section
   6. Footer section
+
+
+** -- Describe of this sex section:
 
 Navbar section: In the navbar section, I included links to each and every section. All links are fixed in the top position. 
 Carousel section: The carousel section is known as "Hero" section. In this carousel, there are 3 images and 
