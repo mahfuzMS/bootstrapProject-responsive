@@ -10,42 +10,56 @@ body {
   padding: 100px 0;
 }
 
-.offcanvas{
+.offcanvas {
   max-width: 70%;
 }
 
 .nav-item a:hover {
- /* background-image: repeating-linear-gradient(135deg, rgba(189,189,189,0.1) 0px, rgba(189,189,189,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));; */
- /* background-image: repeating-linear-gradient(90deg, hsla(31,0%,65%,0.2) 0px, hsla(31,0%,65%,0.2) 0px,transparent 0px, transparent 1px,hsla(31,0%,65%,0.2) 1px, hsla(31,0%,65%,0.2) 4px,transparent 4px, transparent 5px,hsla(31,0%,65%,0.2) 5px, hsla(31,0%,65%,0.2) 8px),repeating-linear-gradient(0deg, hsla(31,0%,65%,0.2) 0px, hsla(31,0%,65%,0.2) 0px,transparent 0px, transparent 1px,hsla(31,0%,65%,0.2) 1px, hsla(31,0%,65%,0.2) 4px,transparent 4px, transparent 5px,hsla(31,0%,65%,0.2) 5px, hsla(31,0%,65%,0.2) 8px),linear-gradient(135deg, rgb(234, 234, 234),rgb(12, 12, 12));; */
- background-image: repeating-linear-gradient(112.5deg, hsla(19,0%,93%,0.2) 0px, hsla(19,0%,93%,0.2) 0px,transparent 0px, transparent 1px,hsla(19,0%,93%,0.2) 1px, hsla(19,0%,93%,0.2) 4px,transparent 4px, transparent 5px,hsla(19,0%,93%,0.2) 5px, hsla(19,0%,93%,0.2) 8px),repeating-linear-gradient(0deg, hsla(19,0%,93%,0.2) 0px, hsla(19,0%,93%,0.2) 0px,transparent 0px, transparent 1px,hsla(19,0%,93%,0.2) 1px, hsla(19,0%,93%,0.2) 4px,transparent 4px, transparent 5px,hsla(19,0%,93%,0.2) 5px, hsla(19,0%,93%,0.2) 8px),linear-gradient(135deg, rgb(238, 238, 238),rgb(121, 121, 121));
+  background-image: repeating-linear-gradient(
+      112.5deg,
+      hsla(19, 0%, 93%, 0.2) 0px,
+      hsla(19, 0%, 93%, 0.2) 0px,
+      transparent 0px,
+      transparent 1px,
+      hsla(19, 0%, 93%, 0.2) 1px,
+      hsla(19, 0%, 93%, 0.2) 4px,
+      transparent 4px,
+      transparent 5px,
+      hsla(19, 0%, 93%, 0.2) 5px,
+      hsla(19, 0%, 93%, 0.2) 8px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      hsla(19, 0%, 93%, 0.2) 0px,
+      hsla(19, 0%, 93%, 0.2) 0px,
+      transparent 0px,
+      transparent 1px,
+      hsla(19, 0%, 93%, 0.2) 1px,
+      hsla(19, 0%, 93%, 0.2) 4px,
+      transparent 4px,
+      transparent 5px,
+      hsla(19, 0%, 93%, 0.2) 5px,
+      hsla(19, 0%, 93%, 0.2) 8px
+    ),
+    linear-gradient(135deg, rgb(238, 238, 238), rgb(121, 121, 121));
 }
 
 .carousel-item {
   height: 90vh;
   min-height: 300px;
-  /* background: no-repeat scroll center scroll;
-    -webkit-background-size: cover;
-    background-size: cover; */
 }
 
 .carousel-item img {
   height: 100%;
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
-  /* background-position: center; */
   object-fit: cover;
   object-position: center;
 }
 
 .carousel-caption {
   bottom: 180px;
-  /* margin: 0 auto; */
   z-index: 2;
   color: #e1b12c;
 }
-/* .carousel-caption:hover{
-   color: #f1fbff;
-} */
 
 .carousel-caption h5 {
   font-size: 45px;
@@ -60,12 +74,6 @@ body {
   font-size: 18px;
   line-height: 1.9;
 }
-
-/* .carousel-caption h5,
-.carousel-caption p, .carousel-indicators  button{
-    color: #fff;
-} */
-
 .carousel-inner::before {
   content: "";
   position: absolute;
@@ -88,85 +96,117 @@ body {
 
 .card-text {
   line-height: 1.9;
-  /* width: 60%; */
 }
 
-#content, #about {
+#content,
+#about {
   margin: 1.5rem;
 }
 
-.content, .about-container, .contact-form{
+.content,
+.about-container,
+.contact-form {
   position: relative;
   width: fit-content;
   margin: auto;
 }
 
-.content::before, .about-container::before , .contact-form::before{
+.content::before,
+.about-container::before,
+.contact-form::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 2px;
   background-color: #262023;
   bottom: 0;
-  left: 50%; 
+  left: 50%;
   transform: translateX(-50%);
 }
 
-.content:hover, .about-container:hover, .contact-form:hover{
+.content:hover,
+.about-container:hover,
+.contact-form:hover {
   color: #b33771;
   cursor: pointer;
 }
 
-.content:hover::before, .about-container:hover::before, .contact-form:hover::before{
+.content:hover::before,
+.about-container:hover::before,
+.contact-form:hover::before {
   background-color: #b33771;
-} 
+}
 
-#contact-form{
+#contact-form {
   margin: 1.25rem;
 }
-.contact-form-main{
+.contact-form-main {
   margin: 3.5rem;
   padding: 3rem;
-  /* border: 1px solid #262023;
-  padding: 30px;
-  font-size: 2rem; */
 }
 
-.form-label{
+.form-label {
   font-size: 1.5rem;
 }
 
-.form-control{
+.form-control {
   font-size: 1.25rem;
 }
-.contact-form-main label{
-  padding-left: .6rem;
+.contact-form-main label {
+  padding-left: 0.6rem;
 }
 
+@media screen and (max-width: 576px) {
+  .carousel-item {
+    height: 60vh;
+    min-height: 350px;
+  }
 
+  .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
 
+  .carousel-caption {
+    bottom: 2.7rem;
+    z-index: 2;
+    color: #e1b12c;
+  }
 
+  .carousel-caption h5 {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
 
+  .carousel-caption p {
+    width: 100%;
+    margin: auto;
+    font-size: 1rem;
+    line-height: 1.9;
+  }
 
-@media screen and (max-width: 500px) {
-  #contact-form{
+  #contact-form {
     margin: 0;
     padding: 0;
   }
-  .contact-form-main{
+  .contact-form-main {
     margin: 1.5rem;
     padding: 1.5rem;
-    /* border: 1px solid #262023;
-    padding: 30px;
-    font-size: 2rem; */
   }
-  
-  .form-label{
+
+  .form-label {
     font-size: 1rem;
   }
-  
-  .form-control{
+
+  .form-control {
     font-size: 1rem;
   }
-  
+}
+
+@media screen and (max-width: 290px) {
+  .carousel-caption {
+    bottom: 1.7rem;
+  }
 }
