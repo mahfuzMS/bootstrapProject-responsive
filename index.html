@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Row CSS link  -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <!-- Font aweasome link  -->
+    <script
+      src="https://kit.fontawesome.com/110453bada.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Responsive Website using bootstrap</title>
+  </head>
+  <body>
+    <!-- Navbe section  -->
+    <div id="home">
+      <nav
+        class="navbar navbar-expand-lg navbar-expand-md bg-body-tertiary fixed-top"
+      >
+        <div class="container-fluid">
+          <a
+            class="navbar-brand shadow-lg p-3 m-2 bg-body-tertiary rounded"
+            href="#home"
+            >MS Learner</a
+          >
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button> 
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                MS Learner
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link shadow-lg fs-5 p-2 m-2 bg-body-tertiary rounded"
+                    aria-current="page"
+                    href="#home"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link shadow-lg fs-5 p-2 m-2 bg-body-tertiary rounded"
+                    aria-current="page"
+                    href="#hero"
+                    >Hero</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link shadow-lg fs-5 p-2 m-2 bg-body-tertiary rounded"
+                    aria-current="page"
+                    href="#content"
+                    >Content</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link shadow-lg fs-5 p-2 m-2 bg-body-tertiary rounded"
+                    aria-current="page"
+                    href="#about"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link shadow-lg fs-5 p-2 m-2 bg-body-tertiary rounded"
+                    aria-current="page"
+                    href="#contact-form"
+                    >Contact Form</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Carousel Section  -->
+    <div id="hero">
+      <div id="carouselExampleDark" class="carousel carousel-white slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img
+              src="./Images/nature1.jpg"
+              class="d-block w-100"
+              alt="insects"
+            />
+            <div class="carousel-caption d-none d-md-block d-sm-block">
+              <h5>Nature’s Unsung Heroes</h5>
+              <p>
+                Discover the vital contributions insects make to the
+                environment, from pollinating flowers to decomposing organic
+                matter.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="./Images/nature2.jpg"
+              class="d-block w-100"
+              alt="Sumit Saha"
+            />
+            <div class="carousel-caption d-none d-md-block d-sm-block">
+              <h5>The Mystery of Light-Loving Insects</h5>
+              <p>
+                he allure of bright light has captivated insects for centuries.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./Images/nature3.jpeg"
+              class="d-block w-100"
+              alt="Saidur Rahman Setu"
+            />
+            <div class="carousel-caption d-none d-md-block d-sm-block">
+              <h5>Nature’s Little Beasts</h5>
+              <p>Meet the insects that earned their monstrous reputations.</p>
+            </div>
+          </div>
+        </div>
+        <!-- <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button> -->
+      </div>
+    </div>
+
+    <!-- Content section using grid -->
+    <div id="content" class="m-5">
+      <h1 class="text-center mb-5 mt-5 content">Beauty of Nature’s</h1>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+        <div class="col">
+          <div class="card">
+            <img
+              src="./Images/laptop.jpg"
+              class="card-img-top"
+              alt="laptop setup"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cozy Workspace</h5>
+              <p class="card-text">
+                A stylish workspace setup featuring a laptop on a wooden desk
+                with natural light streaming in from a nearby window.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="./Images/bird.jpg"
+              class="card-img-top"
+              alt="curious-bird"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Curious Bird</h5>
+              <p class="card-text">
+                A close-up image of a small bird with soft, colorful feathers,
+                set against a vibrant, warm background, creating a lively and
+                cheerful scene.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="./Images/blue-butterfly.jpeg"
+              class="card-img-top"
+              alt="blue-butterfly"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Blue Butterfly</h5>
+              <p class="card-text">
+                A striking blue butterfly resting on green leaves, with delicate
+                details highlighted against a softly lit, nature-filled
+                background.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="./Images/coffee.jpg"
+              class="card-img-top"
+              alt="mornig-coffee"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Morning Coffee</h5>
+              <p class="card-text">
+                A top-down view of a hand holding a fresh cup of coffee over a
+                laptop, capturing the essence of a cozy morning work or study
+                session.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="./Images/deer.jpg"
+              class="card-img-top"
+              alt="winter-warms"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Winter Fawn</h5>
+              <p class="card-text">
+                A young deer standing gracefully in a snowy forest, evoking a
+                serene winter scene with soft, gentle lighting.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="./Images/Fruite-juice.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Refreshing Summer Drink</h5>
+              <p class="card-text">
+                A vibrant display of a refreshing drink filled with watermelon,
+                lime, and mint, perfect for a hot summer day.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="./Images/gucchoPata.jpeg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Autumn Serenity</h5>
+              <p class="card-text">
+                A branch with vibrant red leaves against a soft, blurred
+                background, evoking a sense of peaceful autumn days. The nature
+                will be here.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./Images/night-vila.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Festive Glow</h5>
+              <p class="card-text">
+                A beautifully decorated Christmas tree glowing brightly in a
+                night scene, with a building's spires adding a magical touch to
+                the festive atmosphere.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="./Images/red-butterfly.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Butterfly Bliss</h5>
+              <p class="card-text">
+                A delicate butterfly resting on a vibrant purple flower, with a
+                background of blurred green and yellow, highlighting the beauty
+                of nature and wildlife.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="./Images/single-pata.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Autumn Reflection</h5>
+              <p class="card-text">
+                A close-up shot of an orange autumn leaf resting on a wet
+                surface. The surrounding water droplets create a serene,
+                reflective atmosphere.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="./Images/winter-ice-bar.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Festive Frost</h5>
+              <p class="card-text">
+                A small snowman, adorned with a scarf and buttons, standing on a
+                city street at night. Blurred city lights in the background add
+                a warm, festive .
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="./Images/black-doggy.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Café Canine</h5>
+              <p class="card-text">
+                A humorous and whimsical scene of a dog wearing sunglasses and a
+                jacket, sitting at an outdoor café table. Glasses on the table
+                and the city street.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About section -->
+    <div id="about" class="text-center">
+      <h1 class="about-container text-center mb-5 mt-5">About me</h1>
+      <div class="conrtainer p-5">
+        <div class="row grid row-cols-1 row-cols-md-2">
+          <div class="col">
+            <img
+              class="rounded img-fluid"
+              src="./Images/grass-with-hasin vaiya.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col d-flex justify-content-center align-items-center g-5">
+            <p width="250" class="fs-3">
+              This day was beautiful in this time I spend with my friends and
+              trainer. I never forget the day. I never forget the time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact section -->
+    <div id="contact-form">
+      <h1 class="text-center mb-5 mt-5 contact-form">Contact Form</h1>
+
+      <div class="contact-form-main rounded shadow-lg">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">
+            Email address:
+          </label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Name:</label>
+          <input
+            type="name"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Enter your message:</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="5"
+          ></textarea>
+        </div>
+        <div class="col-auto text-">
+          <button type="submit" class="btn btn btn-outline-success mb-3 fs-5">
+            Send message
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer section  -->
+    <footer class="text-center bg-body-tertiary">
+      <!-- Grid container -->
+      <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="https://www.facebook.com/mahfuz6233"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="https://www.linkedin.com/in/mahfuz33/"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <!-- Github -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="https://github.com/dashboard"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2024 Copyright:
+        <a class="text-body" href="https://www.linkedin.com/in/mahfuz33/"
+          >Mahfuz Hasan</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- Bootstrap JS lilnks -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
